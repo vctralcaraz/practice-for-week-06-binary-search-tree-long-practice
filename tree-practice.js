@@ -24,11 +24,11 @@ function getHeight (rootNode) {
   // Your code here
 }
 
-function countNodes (rootNode) {
+function balancedTree (rootNode) {
   // Your code here
 }
 
-function balancedTree (rootNode) {
+function countNodes (rootNode) {
   // Your code here
 }
 
@@ -39,7 +39,6 @@ function getParentNode (rootNode, target) {
 function inOrderPredecessor (rootNode, target) {
   // Your code here
 }
-
 
 function deleteNodeBST(rootNode, target) {
   // Do a traversal to find the node. Keep track of the parent
@@ -52,10 +51,13 @@ function deleteNodeBST(rootNode, target) {
   //   return null
 
   // Case 1: Zero children:
-  //   set the parent that points to it to null
+  //   Set the parent that points to it to null
 
   // Case 2: Two children:
-  //   set the value to its in-order predecessor, then delete the predecessor
+  //  Set the value to its in-order predecessor, then delete the predecessor
+  //  Replace target node with the left most child on its right side, 
+  //  or the right most child on its left side.
+  //  Then delete the child that it was replaced with.
 
   // Case 3: One child:
   //   Make the parent point to the child
