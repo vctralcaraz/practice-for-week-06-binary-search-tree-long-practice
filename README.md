@@ -64,7 +64,7 @@ Example:
 
     Input:
         null
-      
+
     Output: -1
 ```
 
@@ -79,26 +79,26 @@ Example:
 ```plaintext
     Input:
         1
-       / 
-      9   
-     /      
-    3            
+       /
+      9
+     /
+    3
     Output: False
 
     Input:
         1
        / \
       9   20
-     /      
-    3        
+     /
+    3
     Output: True.
 
     Input:
           1
          / \
         9   20
-       /      
-      3             
+       /
+      3
      / \
     5   6
     Output: False
@@ -107,8 +107,8 @@ Example:
           1
          / \
         9   20
-       / \    \ 
-      3   4    12      
+       / \    \
+      3   4    12
      / \
     5   6
     Output: True
@@ -154,7 +154,7 @@ If the target is the first value in an in-order traversal, return `null`.
 
 ### Delete Node in a Binary Search Tree
 
-Fill out `inOrderPredecessor` which takes the RootNode of a _binary tree_ and
+Fill out `deleteNodeBST` which takes the RootNode of a _binary tree_ and
 a target, and deletes the target Node.
 
 To delete a Node with no children, set its parent's pointer to `null`.
@@ -164,7 +164,7 @@ similar to deleting a Node in a linked list.
 
 To delete a Node with two children,
 replace the target Node's value with its in-order
-_predecessor_ or _successor_, then delete the in-order 
+_predecessor_ or _successor_, then delete the in-order
 predecessor or successor you used.
 You may need to do some additional research for
  details on this operation.
